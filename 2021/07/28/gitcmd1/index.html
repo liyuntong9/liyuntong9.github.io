@@ -1,0 +1,259 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>gitcmd1 | Lyt's Blog</title><meta name="author" content="Lyt"><meta name="copyright" content="Lyt"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="python setup.py sdist bdist_wheel pip install --upgrade twine twine upload --repository-url  https:&#x2F;&#x2F;upload.pypi.org&#x2F;legacy&#x2F; dist&#x2F;* python setup.py build python setup.py sdist 在线安装github包 pip install">
+<meta property="og:type" content="article">
+<meta property="og:title" content="gitcmd1">
+<meta property="og:url" content="https://liyuntong9.github.io/2021/07/28/gitcmd1/index.html">
+<meta property="og:site_name" content="Lyt&#39;s Blog">
+<meta property="og:description" content="python setup.py sdist bdist_wheel pip install --upgrade twine twine upload --repository-url  https:&#x2F;&#x2F;upload.pypi.org&#x2F;legacy&#x2F; dist&#x2F;* python setup.py build python setup.py sdist 在线安装github包 pip install">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/07/28/FfQPDcibTVYOe1a.jpg">
+<meta property="article:published_time" content="2021-07-28T12:44:05.000Z">
+<meta property="article:modified_time" content="2021-07-28T12:49:09.810Z">
+<meta property="article:author" content="Lyt">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/07/28/FfQPDcibTVYOe1a.jpg"><link rel="shortcut icon" href="https://i.loli.net/2021/07/28/rRiGcjQCao1ASu7.png"><link rel="canonical" href="https://liyuntong9.github.io/2021/07/28/gitcmd1/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'gitcmd1',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-07-28 20:49:09'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/07/28/Q6GDO4WBMNkdUyX.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div></div></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://i.loli.net/2021/07/28/FfQPDcibTVYOe1a.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Lyt's Blog</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">gitcmd1</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-07-28T12:44:05.000Z" title="Created 2021-07-28 20:44:05">2021-07-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-07-28T12:49:09.810Z" title="Updated 2021-07-28 20:49:09">2021-07-28</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/git/">git</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="gitcmd1"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><code>python setup.py sdist bdist_wheel</code></p>
+<p><code>pip install --upgrade twine</code></p>
+<p><code>twine upload --repository-url  https://upload.pypi.org/legacy/ dist/*</code></p>
+<p><code>python setup.py build</code></p>
+<p><code>python setup.py sdist</code></p>
+<p>在线安装github包</p>
+<p><code>pip install git+git://github.com/.git</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">channels:</span><br><span class="line">  - defaults</span><br><span class="line">show_channel_urls: true</span><br><span class="line">default_channels:</span><br><span class="line">  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/main</span><br><span class="line">  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/free</span><br><span class="line">  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/r</span><br><span class="line">  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/pro</span><br><span class="line">  - https://mirrors.bfsu.edu.cn/anaconda/pkgs/msys2</span><br><span class="line">custom_channels:</span><br><span class="line">  conda-forge: https://mirrors.bfsu.edu.cn/anaconda/cloud</span><br><span class="line">  msys2: https://mirrors.bfsu.edu.cn/anaconda/cloud</span><br><span class="line">  bioconda: https://mirrors.bfsu.edu.cn/anaconda/cloud</span><br><span class="line">  menpo: https://mirrors.bfsu.edu.cn/anaconda/cloud</span><br><span class="line">  pytorch: https://mirrors.bfsu.edu.cn/anaconda/cloud</span><br><span class="line">  simpleitk: https://mirrors.bfsu.edu.cn/anaconda/cloud</span><br><span class="line"></span><br><span class="line">ssl_verify: true</span><br><span class="line">report_errors: true</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><code>ext_modules</code> 参数用来构建C和C++扩展包，它是Extension实例的列表。每个Extension实例描述了一个独立的扩展模块，扩展模型可以设置扩展包名，头文件，源文件，链接库及其路径，宏定义和编译参数等。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ext_modules=[ Extension(&#x27;&#x27;, glob, libraries, include_dirs) ]</span><br></pre></td></tr></table></figure>
+<p>打包静态文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data_files=[ (&#x27;安装时文件的存储路径（相对于sys.prefix）&#x27;, [&#x27;文件目前的存储路径（相对于setup.py）&#x27;]) ]</span><br></pre></td></tr></table></figure>
+<p>希望被打包的文件：package_data</p>
+<p>不希望被打包的文件：exclude_package_data</p>
+<p>include_package_data=True：启用清单文件MANhIFEST.in</p>
+<p>MANIFEST.in：include recursive-include prune </p>
+<p>MANIFEST.in放在setup.py同级目录</p>
+<p>自动生成脚本，安装后生成/usr/bin/foo的可执行文件，文件入口指向foo/main.py的main函数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">entry_points=&#123;&#x27;console_scripts&#x27; : [&#x27;foo = foo.main:main&#x27;]&#125;</span><br><span class="line">scripts = [&#x27;foo.sh&#x27;]</span><br></pre></td></tr></table></figure>
+<p>执行python setup.py install后会生成/usr/bin/foo.sh并添加权限</p>
+<p>install_requires：当前模块依赖的包</p>
+<p>setup_requires：setup.py依赖的包</p>
+<p>tests_require：测试时依赖的包</p>
+<p>dependency_links：下载依赖包的链接</p>
+<p>extras_require：深度使用模块时依赖的包，需要手动安装</p>
+<p>python_requires：安装环境的限制</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">from setuptools import setup, find_packages</span><br><span class="line"></span><br><span class="line">__version__ = &#x27;1.0&#x27;</span><br><span class="line">url = &#x27;https://github.com/*&#x27;</span><br><span class="line"></span><br><span class="line">install_requires = [</span><br><span class="line">    &#x27;numpy&#x27;,</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line">setup(</span><br><span class="line">    name=&#x27;*&#x27;,</span><br><span class="line">    version=__version__,</span><br><span class="line">    description=&#x27;Library&#x27;,</span><br><span class="line">    author=&#x27;LYT&#x27;,</span><br><span class="line">    author_email=&#x27;LYT@qq.com&#x27;,</span><br><span class="line">    url=url,</span><br><span class="line">    python_requires=&#x27;&gt;=3.6&#x27;,</span><br><span class="line">    install_requires=install_requires,</span><br><span class="line">    packages=find_packages(),</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>源码包：跨平台，先解压，再编译，最后安装，每次安装都要进行编译，安装速度较慢（zip，tar）。</p>
+<p>二进制包：安装过程省去了编译的时间，直接进行解压安装，不同平台编译出来的包无法通用（egg，wheel）。</p>
+<p>第一次使用<code>git push -u origin master</code>，以后可以直接用<code>git push</code>代替<code>git push origin master</code></p>
+<p>如果只是简单地从工作目录中手工删除文件，运行<code>git status</code>时就会出现<code>Changes not staged for commit</code>的提示</p>
+<p><code>git rm &lt;file&gt;</code>将文件从暂存区和工作区中删除，强制删除<code>-f</code></p>
+<p>将文件在暂存区中移除，但在工作区中保留 <code>git rm --cached</code></p>
+<p>将目录作为参数，删除其中的子目录和文件<code>git rm -r</code></p>
+<p><code>git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;</code></p>
+<p>将本地分支上传到远程并合并，如果本地版本和远程版本有差异，但又要强制推送可以使用<code>--force</code>参数</p>
+<p>从远程获取代码并合并本地版本 <code>git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;</code></p>
+<p><code>git remote -v</code></p>
+<p><code>git remote rm name</code>删除远程仓库</p>
+<p><code>git remote rename old_name new_name</code>修改仓库名</p>
+<p>添加远程版本库</p>
+<p><code>git remote add [shortname] [url]</code></p>
+<p><code>git remote show name</code></p>
+<p><code>git help 子命令</code></p>
+<p><code>git commit -a</code> 不需要执行git add命令，直接提交</p>
+<p><code>git mv  [file] [newfile]</code>重命名</p>
+<p><code>git diff</code>显示工作区与暂存区之间的差异</p>
+<p><code>git diff --staged</code> 显示暂存区与本地仓库之间的差异</p>
+<p><code>git diff HEAD</code>显示工作区(已track但未add)和暂存区(已add但未commit)与本地仓库之间的差异</p>
+<p><code>git diff HEAD~x git diff HEAD^^^</code> 查看版本之间的差异</p>
+<p><code>git diff &lt;分支名1&gt; &lt;分支名2&gt;</code> 比较两个分支最后commit内容的差异，<code>--stat</code>显示所有有差异的文件</p>
+<p><code>git pull = git fetch + git merge
+git pull --rebase = git fetch + git rebase</code></p>
+<p>假设有三次提交A，B，C</p>
+<p><img src="./gitcmd1/1627475671582.png" alt="1627475671582"></p>
+<p><img src="./gitcmd1/1627475658142.png" alt="1627475658142"></p>
+<p><strong>git merge</strong></p>
+<p><img src="./gitcmd1/1627475682470.png" alt="1627475682470"></p>
+<p><strong>git rebase</strong></p>
+<p><img src="./gitcmd1/1627475690934.png" alt="1627475690934"></p>
+<p>直接将E提交废除</p>
+<p>有时会conflict，解决冲突后，git add（不执行git commit）+ git rebase —continue</p>
+<p>任何时候，都可以用git rebase —abort来终止rebase，分支会回到rebase前的状态</p>
+<p><img src="./gitcmd1/1627475776145.png" alt="1627475776145"></p>
+<p><img src="./gitcmd1/1627475761642.png" alt="1627475761642"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Lyt</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://liyuntong9.github.io/2021/07/28/gitcmd1/">https://liyuntong9.github.io/2021/07/28/gitcmd1/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/07/28/FfQPDcibTVYOe1a.jpg" data-sites="wechat"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/07/28/ChromeShortcut/"><img class="next-cover" src="https://i.loli.net/2021/07/28/FfQPDcibTVYOe1a.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">ChromeShortcut</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/07/28/Q6GDO4WBMNkdUyX.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Lyt</div><div class="author-info__description">Artificial Intelligence</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/liyuntong9"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/07/28/gitcmd1/" title="gitcmd1"><img src="https://i.loli.net/2021/07/28/FfQPDcibTVYOe1a.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="gitcmd1"/></a><div class="content"><a class="title" href="/2021/07/28/gitcmd1/" title="gitcmd1">gitcmd1</a><time datetime="2021-07-28T12:44:05.000Z" title="Created 2021-07-28 20:44:05">2021-07-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/28/ChromeShortcut/" title="ChromeShortcut"><img src="https://i.loli.net/2021/07/28/FfQPDcibTVYOe1a.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ChromeShortcut"/></a><div class="content"><a class="title" href="/2021/07/28/ChromeShortcut/" title="ChromeShortcut">ChromeShortcut</a><time datetime="2021-07-28T03:37:24.000Z" title="Created 2021-07-28 11:37:24">2021-07-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/28/VscodeShortcut/" title="VscodeShortcut"><img src="https://i.loli.net/2021/07/28/FfQPDcibTVYOe1a.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="VscodeShortcut"/></a><div class="content"><a class="title" href="/2021/07/28/VscodeShortcut/" title="VscodeShortcut">VscodeShortcut</a><time datetime="2021-07-28T02:51:00.000Z" title="Created 2021-07-28 10:51:00">2021-07-28</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 By Lyt</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script></div><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
