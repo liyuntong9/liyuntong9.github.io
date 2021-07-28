@@ -1,0 +1,252 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>VSCODE | Lyt's Blog</title><meta name="author" content="Lyt"><meta name="copyright" content="Lyt"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Ctrl+x删除一行 Ctrl+Alt+Up&#x2F;Down向上&#x2F;下添加光标 Alt+Up&#x2F;Down向上&#x2F;下移动一行 Shift+Alt+Up&#x2F;Down向上&#x2F;下复制一行 Alt+Shift+鼠标左键按列编辑 Home移动到行首 End移动到行尾 Ctrl+Home移动到文件顶部 Ctrl+End移动到文件尾部 (Ctrl)+Shift+Home\End选中左侧、右侧内容 Ctrl+T搜索变量 F12移动">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VSCODE">
+<meta property="og:url" content="https://liyuntong9.github.io/2021/07/28/2021-7-28/index.html">
+<meta property="og:site_name" content="Lyt&#39;s Blog">
+<meta property="og:description" content="Ctrl+x删除一行 Ctrl+Alt+Up&#x2F;Down向上&#x2F;下添加光标 Alt+Up&#x2F;Down向上&#x2F;下移动一行 Shift+Alt+Up&#x2F;Down向上&#x2F;下复制一行 Alt+Shift+鼠标左键按列编辑 Home移动到行首 End移动到行尾 Ctrl+Home移动到文件顶部 Ctrl+End移动到文件尾部 (Ctrl)+Shift+Home\End选中左侧、右侧内容 Ctrl+T搜索变量 F12移动">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/07/28/FfQPDcibTVYOe1a.jpg">
+<meta property="article:published_time" content="2021-07-28T02:51:00.000Z">
+<meta property="article:modified_time" content="2021-07-28T03:26:35.618Z">
+<meta property="article:author" content="Lyt">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/07/28/FfQPDcibTVYOe1a.jpg"><link rel="shortcut icon" href="https://i.loli.net/2021/07/28/rRiGcjQCao1ASu7.png"><link rel="canonical" href="https://liyuntong9.github.io/2021/07/28/2021-7-28/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'VSCODE',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-07-28 11:26:35'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/07/28/Q6GDO4WBMNkdUyX.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">1</div></a></div></div></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://i.loli.net/2021/07/28/FfQPDcibTVYOe1a.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Lyt's Blog</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">VSCODE</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-07-28T02:51:00.000Z" title="Created 2021-07-28 10:51:00">2021-07-28</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-07-28T03:26:35.618Z" title="Updated 2021-07-28 11:26:35">2021-07-28</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E9%85%8D%E7%BD%AE/">配置</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="VSCODE"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><code>Ctrl+x</code>删除一行</p>
+<p><code>Ctrl+Alt+Up/Down</code>向上/下添加光标</p>
+<p><code>Alt+Up/Down</code>向上/下移动一行</p>
+<p><code>Shift+Alt+Up/Down</code>向上/下复制一行</p>
+<p><code>Alt+Shift+鼠标左键</code>按列编辑</p>
+<p><code>Home</code>移动到行首</p>
+<p><code>End</code>移动到行尾</p>
+<p><code>Ctrl+Home</code>移动到文件顶部</p>
+<p><code>Ctrl+End</code>移动到文件尾部</p>
+<p><code>(Ctrl)+Shift+Home\End</code>选中左侧、右侧内容</p>
+<p><code>Ctrl+T</code>搜索变量</p>
+<p><code>F12</code>移动到变量定义处</p>
+<p><code>Ctrl+[]</code>代码缩进</p>
+<p><code>Ctrl+F2</code>光标出现在相同文本处</p>
+<p><code>Ctrl+Backspace</code>删除一个单词</p>
+<p><code>Ctrl+Shift+\</code>在括号之间切换光标</p>
+<p><code>Ctrl+9</code>Expand Bracket Selection自动选择整个块</p>
+<p><code>Shift+Alt+F</code>代码格式化</p>
+<p><code>Ctrl+Shift+F</code>在所有文件中搜索</p>
+<p><code>Ctrl+Shift+T</code>重新打开刚才关闭的页面</p>
+<p><code>Ctrl+Shift+E</code>跳转到Explorer</p>
+<p><code>Ctrl+B</code>打开关闭侧边栏</p>
+<p><code>Ctrl+J</code>打开关闭终端</p>
+<p><code>Ctrl+H</code>替换</p>
+<p><code>Ctrl+E</code>选择工作目录文件</p>
+<p><code>Ctrl+Shift+P</code>搜索系统设置</p>
+<p><code>Alt+Enter</code>运行代码</p>
+<p><code>Ctrl+N/W</code>新建/关闭页面</p>
+<p><code>Ctrl+Shift+N/W</code>新建关闭窗口</p>
+<p><code>Ctrl+Tab</code>切换窗口</p>
+<p><strong>调试</strong></p>
+<ol>
+<li><p>选中<code>cpp</code>文件</p>
+</li>
+<li><p>Ctrl+Shift+P</p>
+</li>
+<li>输入task</li>
+<li>选择Tasks:Configure Task</li>
+<li>选择C/C++:g++.exe生成活动文件</li>
+<li>生成task.json</li>
+</ol>
+<hr>
+<ol>
+<li>选中<code>cpp</code>文件</li>
+<li>选择Run and Debug</li>
+<li>create a launch.json file</li>
+<li>选择C++ (GDB/LLDB)</li>
+<li>选择g++.exe生成和调试活动文件</li>
+<li>生成launch.json</li>
+</ol>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;version&quot;</span>: <span class="string">&quot;0.2.0&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;configurations&quot;</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">&quot;name&quot;</span>: <span class="string">&quot;g++.exe - 生成和调试活动文件&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;type&quot;</span>: <span class="string">&quot;cppdbg&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;request&quot;</span>: <span class="string">&quot;launch&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;program&quot;</span>: <span class="string">&quot;$&#123;fileDirname&#125;\\$&#123;fileBasenameNoExtension&#125;.exe&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;args&quot;</span>: [],</span><br><span class="line">            <span class="attr">&quot;stopAtEntry&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">&quot;cwd&quot;</span>: <span class="string">&quot;$&#123;fileDirname&#125;&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;environment&quot;</span>: [],</span><br><span class="line">            <span class="attr">&quot;externalConsole&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">            <span class="attr">&quot;MIMode&quot;</span>: <span class="string">&quot;gdb&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;miDebuggerPath&quot;</span>: <span class="string">&quot;C:\\MinGW\\bin\\gdb.exe&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;setupCommands&quot;</span>: [</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="attr">&quot;description&quot;</span>: <span class="string">&quot;为 gdb 启用整齐打印&quot;</span>,</span><br><span class="line">                    <span class="attr">&quot;text&quot;</span>: <span class="string">&quot;-enable-pretty-printing&quot;</span>,</span><br><span class="line">                    <span class="attr">&quot;ignoreFailures&quot;</span>: <span class="literal">true</span></span><br><span class="line">                &#125;</span><br><span class="line">            ],</span><br><span class="line">            <span class="attr">&quot;preLaunchTask&quot;</span>: <span class="string">&quot;C/C++: g++.exe 生成活动文件&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="attr">&quot;version&quot;</span>: <span class="string">&quot;2.0.0&quot;</span>,</span><br><span class="line">	<span class="attr">&quot;tasks&quot;</span>: [</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="attr">&quot;type&quot;</span>: <span class="string">&quot;cppbuild&quot;</span>,</span><br><span class="line">			<span class="attr">&quot;label&quot;</span>: <span class="string">&quot;C/C++: g++.exe 生成活动文件&quot;</span>,</span><br><span class="line">			<span class="attr">&quot;command&quot;</span>: <span class="string">&quot;C:\\MinGW\\bin\\g++.exe&quot;</span>,</span><br><span class="line">			<span class="attr">&quot;args&quot;</span>: [</span><br><span class="line">				<span class="string">&quot;-g&quot;</span>,</span><br><span class="line">				<span class="string">&quot;$&#123;file&#125;&quot;</span>,</span><br><span class="line">				<span class="string">&quot;-o&quot;</span>,</span><br><span class="line">				<span class="string">&quot;$&#123;fileDirname&#125;\\$&#123;fileBasenameNoExtension&#125;.exe&quot;</span></span><br><span class="line">			],</span><br><span class="line">			<span class="attr">&quot;options&quot;</span>: &#123;</span><br><span class="line">				<span class="attr">&quot;cwd&quot;</span>: <span class="string">&quot;$&#123;fileDirname&#125;&quot;</span></span><br><span class="line">			&#125;,</span><br><span class="line">			<span class="attr">&quot;problemMatcher&quot;</span>: [</span><br><span class="line">				<span class="string">&quot;$gcc&quot;</span></span><br><span class="line">			],</span><br><span class="line">			<span class="attr">&quot;group&quot;</span>: <span class="string">&quot;build&quot;</span>,</span><br><span class="line">			<span class="attr">&quot;detail&quot;</span>: <span class="string">&quot;编译器: C:\\MinGW\\bin\\g++.exe&quot;</span></span><br><span class="line">		&#125;</span><br><span class="line">	]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Settings.json</strong></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;editor.formatOnSave&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">     <span class="attr">&quot;code-runner.saveFileBeforeRun&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">     <span class="attr">&quot;code-runner.preserveFocus&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">     <span class="attr">&quot;code-runner.clearPreviousOutput&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">     <span class="attr">&quot;code-runner.runInTerminal&quot;</span>: <span class="literal">true</span>,</span><br><span class="line">     <span class="attr">&quot;code-runner.executorMap&quot;</span>: &#123;</span><br><span class="line">         <span class="attr">&quot;c&quot;</span>: <span class="string">&quot;cd $dir &amp;&amp; gcc $fileName -o $fileNameWithoutExt &amp;&amp; $dir$fileNameWithoutExt&quot;</span>,</span><br><span class="line">        <span class="attr">&quot;cpp&quot;</span>: <span class="string">&quot;if (!(test-path $fileNameWithoutExt.txt)) &#123;New-item $fileNameWithoutExt.txt&#125; &amp;&amp; g++ $fileName -o $fileNameWithoutExt &amp;&amp; get-content $fileNameWithoutExt.txt  &amp;&amp; get-content $fileNameWithoutExt.txt  | $dir$fileNameWithoutExt&quot;</span></span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>Snippet/cpp.json</strong></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="attr">&quot;main func&quot;</span>: &#123;</span><br><span class="line">		<span class="attr">&quot;prefix&quot;</span>: <span class="string">&quot;mainfunc&quot;</span>,</span><br><span class="line">		<span class="attr">&quot;body&quot;</span>: [</span><br><span class="line">			<span class="string">&quot;#include&lt;iostream&gt;&quot;</span></span><br><span class="line">			<span class="string">&quot;#include&lt;cstdio&gt;&quot;</span></span><br><span class="line">			<span class="string">&quot;#include&lt;cstring&gt;&quot;</span></span><br><span class="line">			<span class="string">&quot;#include&lt;algorithm&gt;&quot;</span></span><br><span class="line">			<span class="string">&quot;#include &lt;vector&gt;&quot;</span></span><br><span class="line">			<span class="string">&quot;//debug&quot;</span></span><br><span class="line">			<span class="string">&quot;#ifdef debug&quot;</span></span><br><span class="line">			<span class="string">&quot;#define PA(a, n) L(i, 0, n) O(a[i]); puts(\&quot;\&quot;)&quot;</span></span><br><span class="line">			<span class="string">&quot;#define PA2(a, n, m) L(i, 0, n) &#123;L(j, 0, m) O(a[i][j]); puts(\&quot;\&quot;)&#125;&quot;</span></span><br><span class="line">			<span class="string">&quot;#define PAE(a, n) LE(i, 1, n) O(a[i]); puts(\&quot;\&quot;)&quot;</span></span><br><span class="line">			<span class="string">&quot;#define PA2E(a, n, m) LE(i, 1, n) &#123;LE(i, 1, m) O(a[i][j]); puts(\&quot;\&quot;)&#125;&quot;</span></span><br><span class="line">			<span class="string">&quot;#else&quot;</span></span><br><span class="line">			<span class="string">&quot;#define PA(a, n) 1&quot;</span></span><br><span class="line">			<span class="string">&quot;#define PA2(a, n, m) 1&quot;</span></span><br><span class="line">			<span class="string">&quot;#define PAE(a, n) 1&quot;</span></span><br><span class="line">			<span class="string">&quot;#define PA2E(a, n, m) 1&quot;</span></span><br><span class="line">			<span class="string">&quot;#endif&quot;</span></span><br><span class="line">			<span class="string">&quot;//loop&quot;</span></span><br><span class="line">			<span class="string">&quot;#define L(i, a, b) for (int i = a; i &lt; b; i++)&quot;</span></span><br><span class="line">			<span class="string">&quot;#define R(i, b, a) for (int i = b - 1; i &gt;= a; i--)&quot;</span></span><br><span class="line">			<span class="string">&quot;#define LE(i, a, b) for (int i = a; i &lt;= b; i++)&quot;</span></span><br><span class="line">			<span class="string">&quot;#define RE(i, b, a) for (int i = b; i &gt;= a; i--)&quot;</span></span><br><span class="line">			<span class="string">&quot;#define each(x, a) for (auto &amp;x : a)&quot;</span></span><br><span class="line">			<span class="string">&quot;//other&quot;</span></span><br><span class="line">			<span class="string">&quot;#define fi first&quot;</span></span><br><span class="line">			<span class="string">&quot;#define se second&quot;</span></span><br><span class="line">			<span class="string">&quot;#define pb push_bask&quot;</span></span><br><span class="line">			<span class="string">&quot;#define sz(a) (int)(a).size()&quot;</span></span><br><span class="line">			<span class="string">&quot;#define all(a) begin(a), end(a)&quot;</span></span><br><span class="line">			<span class="string">&quot;#define SUM(a) accumulate(all(a), 0LL)&quot;</span></span><br><span class="line">			<span class="string">&quot;#define MIN(a) *min_element(all(a))&quot;</span></span><br><span class="line">			<span class="string">&quot;#define MAX(a) *max_element(all(a))&quot;</span></span><br><span class="line">			<span class="string">&quot;#define I(x) scanf(\&quot;%d\&quot;, &amp;x)&quot;</span></span><br><span class="line">			<span class="string">&quot;#define O(x) printf(\&quot;%d \&quot;, x)&quot;</span></span><br><span class="line">			<span class="string">&quot;#define direction int dx[4] = &#123;-1, 0, 1, 0&#125;, dy[4] = &#123;0, 1, 0, -1&#125;&quot;</span></span><br><span class="line">			<span class="string">&quot;#define PQ(x) priority_queue&lt;x, vector&lt;x&gt;, greater&lt;x&gt;&gt;&quot;</span></span><br><span class="line">			<span class="string">&quot;using namespace std;&quot;</span></span><br><span class="line">			<span class="string">&quot;typedef long long LL;&quot;</span></span><br><span class="line">			<span class="string">&quot;typedef pair&lt;int, int&gt; PII;&quot;</span></span><br><span class="line">			<span class="string">&quot;typedef vector&lt;int&gt; VI;&quot;</span></span><br><span class="line">			<span class="string">&quot;const int INF = 0x3f3f3f3f;&quot;</span></span><br><span class="line">			<span class="string">&quot;const int N = $0;&quot;</span></span><br><span class="line">			<span class="string">&quot;int main() &#123;&quot;</span></span><br><span class="line">			<span class="string">&quot;	$1&quot;</span></span><br><span class="line">			<span class="string">&quot;	return 0;&quot;</span></span><br><span class="line">			<span class="string">&quot;&#125;&quot;</span></span><br><span class="line">		],</span><br><span class="line">		<span class="attr">&quot;description&quot;</span>: <span class="string">&quot;main func&quot;</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>Atom One Light Theme</code></p>
+<p><code>Brackets Light Pro</code></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">Lyt</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://liyuntong9.github.io/2021/07/28/2021-7-28/">https://liyuntong9.github.io/2021/07/28/2021-7-28/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/07/28/FfQPDcibTVYOe1a.jpg" data-sites="wechat"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/07/28/Q6GDO4WBMNkdUyX.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Lyt</div><div class="author-info__description">Artificial Intelligence</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">1</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/liyuntong9"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/07/28/2021-7-28/" title="VSCODE"><img src="https://i.loli.net/2021/07/28/FfQPDcibTVYOe1a.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="VSCODE"/></a><div class="content"><a class="title" href="/2021/07/28/2021-7-28/" title="VSCODE">VSCODE</a><time datetime="2021-07-28T02:51:00.000Z" title="Created 2021-07-28 10:51:00">2021-07-28</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 By Lyt</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script></div><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
